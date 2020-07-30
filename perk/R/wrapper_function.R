@@ -1,5 +1,5 @@
 # permutation test for pearson or spearman correlation coefficients
-perm_cor <- function(x, y, B = 1000, method = c("pearson", "spearman"), alternative = c("two.sided", "less", "greater")) {
+perm_cor <- function(x, y, B, method = c("pearson", "spearman"), alternative = c("two.sided", "less", "greater")) {
   n <- length(x)
   if (method == "spearman") {
     x <- rank(x)
@@ -20,7 +20,7 @@ perm_cor <- function(x, y, B = 1000, method = c("pearson", "spearman"), alternat
 }
 
 # permutation test for ccc
-perm_ccc <- function(x, y, B=1000, alternative = c("two.sided", "less", "greater")) {
+perm_ccc <- function(x, y, B, alternative = c("two.sided", "less", "greater")) {
   n <- length(x)
   rho_c <- rho_ccc_func(x, y)
   rho_s <- rho_ccc_s_func(x, y)
