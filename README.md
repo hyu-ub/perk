@@ -7,7 +7,7 @@ Pearson's correlation
 
 Spearman's correlation
 >Han Yu, Alan D. Hutson. "A Robust Spearman Correlation Coefficient Permutation Test". arXiv:2008.01200 [stat.ME]
+
 The article is available at: https://arxiv.org/abs/2008.01200
 
-Lin's concordance correlation
-Manuscript under review
+Lin's concordance correlation: Manuscript under review
