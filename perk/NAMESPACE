@@ -3,3 +3,4 @@
 export(perk_test)
 importFrom(stats,cor)
 importFrom(stats,cov)
+importFrom(stats,var)

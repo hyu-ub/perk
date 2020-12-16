@@ -9,6 +9,7 @@ perk_test(
   x,
   y,
   B = 1000,
+  r0 = 0,
   method = c("pearson", "spearman", "ccc"),
   alternative = c("two.sided", "less", "greater")
 )
@@ -20,10 +21,13 @@ perk_test(
 
 \item{B}{an \code{interger} number of permutations}
 
-\item{method}{the correlation coefficient to be tested, options include Pearson's correlation coefficient (\code{pearson}), 
-Spearman's correlation coefficient (\code{spearmsn}), and Lin's concordance correlation coefficient (\code{ccc}).}
+\item{r0}{a \code{numeric} denoting the CCC under the null hypothesis. It should be in the range between -1 and 1. 
+This parameter will be ignored for the tests of Pearson or Spearman's correlation coefficient.}
 
-\item{alternative}{the alternative hypothesis, can be}
+\item{method}{the correlation coefficient to be tested, options include Pearson's correlation coefficient (\code{pearson}), 
+Spearman's correlation coefficient (\code{spearman}), and Lin's concordance correlation coefficient (\code{ccc}).}
+
+\item{alternative}{the alternative hypothesis, can be \code{two.sided}, \code{less}, or \code{greater}}
 }
 \value{
 \describe{
@@ -41,6 +45,9 @@ Studentized permutation test of Lin's concordance correlation coefficient.
 Robust permutation test of Pearson correlation coefficient, Spearman correlation coefficient, and Lin's concordance correlation coefficient.
 The test robustly controls type I error under general scenarios
 when sample size is small and two variables are dependent but uncorrelated.
+Currently, for Pearson and Spearman correlations, the test only supports a zero null hypothesis, but the alternative hypothesis can be 
+either one-sided or two-sided. For CCC, the test supports a more general null hypothesis. Currently, the package only supports a one-sided 
+alternative hypothesis (greater).
 }
 \examples{
 set.seed(123)
