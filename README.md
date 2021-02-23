@@ -6,8 +6,9 @@ Pearson's correlation
 >DiCiccio CJ, Romano JP. Robust permutation tests for correlation and regression coefficients. Journal of the American Statistical Association. 2017 Jul 3;112(519):1211-20.
 
 Spearman's correlation
->Han Yu, Alan D. Hutson. "A Robust Spearman Correlation Coefficient Permutation Test". arXiv:2008.01200 [stat.ME]
+>Han Yu, Alan D. Hutson. A Robust Spearman Correlation Coefficient Permutation Test. arXiv:2008.01200 [stat.ME]
 
 The article is available at: https://arxiv.org/abs/2008.01200
 
-Lin's concordance correlation: Manuscript under review
+Lin's concordance correlation
+>Hutson, Alan D., and Han Yu. A robust permutation test for the concordance correlation coefficient. Pharmaceutical Statistics (2021).  https://doi.org/10.1002/pst.2101
