@@ -50,8 +50,8 @@ test_permute_stu_2 <- function(x, y, rc0, B=500) {
   u_2 <- u_1
   v_2 <- rho_hat_0*u_1 + sqrt(1 - rho_hat_0^2)*v_1
   # re-scale and shift
-  x_2 <- x
-  y_2 <- y 
+  x_2 <- u_2*sqrt(var(x)) + mean(x)
+  y_2 <- v_2*sqrt(var(y)) + mean(y) 
   #######
   
   rho_star_vec <- c()
